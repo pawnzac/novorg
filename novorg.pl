@@ -111,7 +111,7 @@ my $top_blurb = "\\documentclass[12pt,ebook,oneside,openleft,final]{memoir}
 \\usepackage{tgschola}
 \\usepackage{verse}
 \\setlength\\epigraphwidth{.8\\textwidth}
-\\newcommand{\\mytime}[1]{\\textsc{\\textbf{#1}}}
+\\newcommand{\\mytime}[2]{\\noindent\\emph{#1}\\\\ \\emph{#2}\\\\}
 \\newcommand{\\epi}[1]{\\epigraph{\\emph{#1}}{}{}}
 %\\setlength\\midchapskip{10pt}
 \\usepackage{calc}
@@ -119,6 +119,9 @@ my $top_blurb = "\\documentclass[12pt,ebook,oneside,openleft,final]{memoir}
 \\renewcommand\\printchaptername{}
 \\renewcommand\\chapnumfont{\\Large\\centering}
 \\renewcommand\\chaptitlefont{\\LARGE\\centering}
+\\renewcommand\\partnumfont{\\normalfont\\Huge}
+\\renewcommand\\partnamefont{\\normalfont\\Huge}
+\\renewcommand\\parttitlefont{\\normalfont\\Huge\\centering}
 \\renewcommand\\afterchapternum{\\par\\nobreak\\vskip\\midchapskip\\hrule\\vskip\\midchapskip}
 \\begin{document}
 \\medievalpage
